@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Student Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=REM:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,600&family=Tajawal:wght@300&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            padding:3rem 3rem;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        .student-data{
+            border:2px solid black;
+            padding:2rem 1.5rem;
+            border:3px solid black;
+            border-radius: 12px;
+        }
+        .input-set{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            padding-bottom: 1rem;
+        }
+       
+        .input-set label{
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .input-set input{
+            padding:8px 10px;
+            outline:none;
+            border:3px solid black;
+            border-radius: 4px;
+            font-size: 20px;
+            color:rgb(91, 90, 90);
+        }
+        .input-set input::placeholder{
+            font-size:18px;
+        }
+        .credentials{
+            display: flex;
+            gap:4rem;
+        }
+        .group-set{
+            width:400px;
+        }
+        #back{
+            position: absolute;
+            font-size: 2rem;
+            top:1rem;
+            left:2rem;
+            color:rgb(132, 130, 130);
+            cursor: pointer;
+        }#back:hover{ color:black;}
+        #submit{
+            padding:8px 13px;
+            font-size:22px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border:none;
+            border-radius: 7px;
+            color:#fff;
+            background-color: rgb(39, 117, 220);
+            transition: .4s;
+        }#submit:hover{background-color: rgb(26, 90, 173);}
+        #schoolname{
+            text-align: center;
+            font-size:2.5rem;
+            color:rgb(150, 236, 150);
+            text-shadow: 5px 3px black;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <i class="fa-solid fa-arrow-left" id="back"></i>
+    <h1 id="schoolname">Easter Heights Public School</h1>
+    <div class="student-data">
+        <h2 style="font-size:2rem; 
+             text-align: center;
+              margin-bottom: 1.2rem;
+        
+        ">Enter the Student Details</h2>
+        <div class="credentials">
+            <div class="group-1 group-set">
+                <div class="input-set">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div class="input-set">
+                    <label for="">Middle Name</label>
+                    <input type="text" placeholder="Enter your middle name">
+                </div>
+                <div class="input-set">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+                <div class="input-set">
+                    <label for="">Date of Birth</label>
+                    <input type="date" placeholder="Enter your dob">
+                </div>
+                <div class="input-set">
+                    <label for="">Age</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+            </div>
+            
+            <div class="group-2 group-set">
+                <div class="input-set">
+                    <label for="">Gender</label>
+                    <div class="gender" style="display: flex;gap:3rem"> <div class="male">
+                        <input style="cursor: pointer;" type="radio" id="male" value="HTML">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                        <input style="cursor: pointer;" type="radio" id="female" value="HTML">
+                        <label for="female">Female</label>
+                    </div>
+                    </div>
+                   
+                </div>
+                <div class="input-set">
+                    <label for="">Caste</label>
+                    <input type="text" placeholder="SC/ST/OBC/General ..">
+                </div>
+                <div class="input-set">
+                    <label for="">Religion</label>
+                    <input type="text" placeholder="Enter your religion">
+                </div>
+                <div class="input-set">
+                    <label for="">Standard</label>
+                    <input type="number" placeholder="Enter your standard">
+                </div>
+                <div class="input-set">
+                    <label for="">Email Id</label>
+                    <input type="email" placeholder="Enter your emailid">
+                </div>
+            </div>
+           <div class="group-3 group-set">
+            <div class="input-set">
+                <label for="">Contact 1</label>
+                <input type="tel" placeholder="+91 000-000-00-00">
+            </div>
+            <div class="input-set">
+                <label for="">Contact 2</label>
+                <input type="tel" placeholder="+91 000-000-00-00">
+            </div>
+           
+            <div class="input-set">
+                <label for="">Months</label>
+                <input type="number" placeholder="Enter your months">
+            </div>
+            <div class="input-set">
+                <label for="">Status</label>
+                <input type="text" placeholder="Enter your status">
+            </div>
+            <div class="input-set">
+                <label for="">Reason</label>
+                <input type="text" placeholder="Enter the reason">
+            </div>
+           </div>
+            
+        </div>
+      <button id="submit">Submit</button>
+    </div>
+</body>
+</html>

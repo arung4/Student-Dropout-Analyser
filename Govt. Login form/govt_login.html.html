@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt. Login Form</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=REM:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,600&family=Tajawal:wght@300&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+         body{
+            height:100vh;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        form{
+            padding:15px 25px;
+            background-color: #fffbfb;
+            border:4px solid black;
+            border-radius: 10px;
+            letter-spacing: 1px;
+           box-shadow: 1px 4px 17px black; 
+        }
+        .inner-container{
+            padding-top: 12px;
+            padding:13px 0;
+            /* position: relative; */
+            width:390px;
+            /* background-color: yellow; */
+        }
+        h1{
+            font-size:30px;
+            text-align: center;
+            /* background-color: blueviolet; */
+           color:#222;
+        }
+        .input-set{
+            display: flex;
+            flex-direction: column;
+            gap:8px;
+            padding-bottom: 22px;
+            position: relative;
+        }
+        .input-set label{
+            font-size:20px;
+            font-weight: 500;
+        }
+        .input-set input{
+            padding:10px 12px;
+            font-size:20px;
+            color:black;
+            border-radius:5px;
+            outline:none;
+            border:3px solid black;
+        }
+        input::placeholder{
+            font-size: 18px;
+        }
+        #forgot-password{
+            cursor: pointer;
+            position: absolute;
+            right:8px;
+            bottom:-10px;
+            color:rgb(58, 56, 56);
+        }#forgot-password:hover{
+            color:black;
+        }
+        button{
+            margin:12px 0;
+            font-size:20px;
+            font-weight: 600;
+            padding:9px 10px;
+            border:none;
+            border-radius: 5px;
+             width: 390px;
+             cursor: pointer;
+             font-size:24px;
+             background-color: rgb(22, 92, 204);
+             transition:.3s;
+             color:#fff;
+             letter-spacing: 1px;
+        }
+        button:hover{
+            background-color: rgb(25, 78, 163);
+        }
+        .alternate{
+            text-align: center;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        #register{
+            text-decoration: none;  
+            cursor: pointer;
+            color:rgb(30, 98, 207);
+        }
+           
+        
+    </style>
+</head>
+<body>
+   
+    <form action="">
+          <h1>Login Form</h1>
+          <div class="inner-container">
+            <div class="input-set">
+                <label for="username">Authority Username</label>
+                <input type="text" placeholder="Enter your Username">
+            </div>
+            <div class="input-set">
+                <label for="schoolid">Authority Email Id</label>
+                <input type="email" placeholder="Enter your School ID">
+            </div>
+            <div class="input-set">
+                <label for="password">Authority  Password</label>
+                <input type="password" placeholder="Enter your Password">
+                 <a id="forgot-password">Forgot Password ?</a>
+            </div> 
+          </div>
+          <button>Login</button>
+          <p class="alternate">Don't have an account? <a href="#" id="register">Register</a></p>
+    </form>
+</body>
+</html>
